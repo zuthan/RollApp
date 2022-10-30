@@ -70,7 +70,7 @@ io.sockets.on("connection", (socket) => {
 const connectDB = require("./db/connect");
 
 //Defining the port.
-const port = 8000 || process.env.port;
+const port = process.env.port || 8000;
 
 const start = async () => {
   try {
